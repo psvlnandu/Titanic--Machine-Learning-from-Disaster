@@ -63,7 +63,7 @@ A numerical 'Deck' feature was engineered from the 'Cabin' column to capture the
 deck_mapping = {"A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6, "G": 7, "T": 8, "U": 0}
 
 ### Verifying the Features  
-![test_data.info](images/image.png)
+![test_data.info](Images/image.png)
 #### Models
 * Logistic Regression
 * Random Forest Classifier (with and without Grid Search for hyperparameter tuning)
