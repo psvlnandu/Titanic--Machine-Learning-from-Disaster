@@ -106,10 +106,12 @@ The performance of the various models was evaluated using accuracy from local cr
 ### Conclusion & Performance Analysis
 Best Model: Random Forest Classifier (RFC) with Grid Search
 
-Submission Score: 0.78708
+Submission Score on unseen test dataset: 0.78708
 
 The final submission score of 0.78708 was achieved with the Random Forest Classifier. The model's success can be attributed to a combination of robust feature engineering and systematic hyperparameter tuning.
 
 The most significant performance boost came from moving beyond simple median imputation for the 'Age' column. Instead, we implemented predictive imputation by training a RandomForestRegressor on features like Pclass, Title, and FamilySize to generate more accurate age estimates.
 
 Furthermore, the creation of other synthetic features, such as Deck (from the 'Cabin' column) and FamilySize, provided the model with more predictive power. Finally, using Grid Search to find the optimal hyperparameters (e.g., n_estimators, max_depth) for the Random Forest Classifier was crucial in maximizing its performance on the unseen data.
+
+While the top scores on the leaderboard are around 0.837, this project serves as an excellent foundation. Future work to improve performance could involve more advanced feature engineering, such as extracting passenger titles from their names, and exploring more complex ensemble methods like Gradient Boosting to further close the gap with the top-ranking solutions.
